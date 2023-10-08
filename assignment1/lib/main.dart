@@ -30,7 +30,7 @@ void _showCardDetails(BuildContext context, Comments comment) {
       builder: (BuildContext context) {
         return ListTile(
             subtitle: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 16.0),
           child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 20.0,
+        elevation: 4.0,
         shadowColor: Colors.black,
         backgroundColor: Colors.lightBlue,
         title: Center(child: Text(widget.title)),
@@ -126,8 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Card(
                           color: Colors.white,
-                          elevation: 8.0,
-                          shadowColor: Colors.black,
+                          elevation: 2.0,
                           shape: const RoundedRectangleBorder(
                             borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(20.0),
@@ -136,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           child: Padding(
                               padding:
-                                  const EdgeInsets.only(top: 4.0, bottom: 4.0),
+                                  const EdgeInsets.only(top: 1.0, bottom: 1.0),
                               child: ListTile(
                                 leading: CircleAvatar(
                                   backgroundColor: Colors.blue.shade700,
